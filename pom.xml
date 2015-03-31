@@ -31,10 +31,10 @@
         <version>${jetty-version}</version>
         <configuration>
           <webAppConfig>
-            <contextPath>/v2</contextPath>
+            <contextPath>/</contextPath>
           </webAppConfig>
           <webAppSourceDirectory>target/${project.artifactId}-${project.version}</webAppSourceDirectory>
-          <webDefaultXml>${project.basedir}/conf/jetty/webdefault.xml</webDefaultXml>
+          <!--<webDefaultXml>${project.basedir}/conf/jetty/webdefault.xml</webDefaultXml>-->
           <stopPort>8079</stopPort>
           <stopKey>stopit</stopKey>
           <connectors>
@@ -156,7 +156,7 @@
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
-      <artifactId>servlet-api</artifactId>
+      <artifactId>javax.servlet-api</artifactId>
       <version>${servlet-api-version}</version>
     </dependency>
   </dependencies>
@@ -176,7 +176,7 @@
     <slf4j-version>1.6.3</slf4j-version>
     <scala-test-version>1.6.1</scala-test-version>
     <junit-version>4.8.1</junit-version>
-    <servlet-api-version>2.5</servlet-api-version>
+    <servlet-api-version>3.0.1</servlet-api-version>
     <springfox.version>2.0.0-SNAPSHOT</springfox.version>
     <spring.version>4.0.9.RELEASE</spring.version>
   </properties>
