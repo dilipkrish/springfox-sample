@@ -29,9 +29,7 @@ public class SwaggerConfig {
 
     @Bean
     public Docket customImplementation(){
-        return new Docket(DocumentationType.SWAGGER_2)
-            .groupName("default")
-            .apiInfo(apiInfo());
+        return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo());
     }
 
 }
