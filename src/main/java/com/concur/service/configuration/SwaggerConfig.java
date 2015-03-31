@@ -1,6 +1,7 @@
 package com.concur.service.configuration;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import springfox.documentation.service.ApiInfo;
@@ -10,6 +11,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 
 @Configuration
+@ComponentScan(basePackages = "com.concur.service.api")
 @EnableWebMvc
 @EnableSwagger2 //Loads the spring beans required by the framework
 public class SwaggerConfig {
